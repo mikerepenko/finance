@@ -1,0 +1,3 @@
+eas submit -p ios --latest
+eas build --platform ios
+eas build --platform android

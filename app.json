@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "finance",
-    "slug": "finance",
-    "version": "1.0.0",
+    "name": "Wallet - Money, budget",
+    "slug": "briefly",
+    "version": "1.0.18",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./src/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,16 +18,26 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.briefly.finance",
+      "buildNumber": "1.0.18"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.briefly.finance",
+      "versionCode": 18,
+      "permissions": [
+        "Camera",
+        "BILLING"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "900e2b92-2535-4904-b57a-b385a9edb8c4"
+      }
     }
   }
 }
